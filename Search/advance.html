@@ -1,31 +1,10 @@
-<!--
-Your website must meet the following requirements:-
-1.Pages: Your website should have at least three pages: one for Google Search, one for Google Image Search, and one for Google Advanced Search.
-2.On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
-3.Query Text: On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
-4.Like Google’s own, your search bar should be centered with rounded corners. The search button should also be centered, and should be beneath the search bar.
-5.Query Images: On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
-6.Query Advanced: On the Google Advanced Search page, the user should be able to provide input for the following four fields (taken from Google’s own advanced search options)
-    6a.Find pages with… “all these words:”
-    6b.Find pages with… “this exact word or phrase:”
-    6c.Find pages with… “any of these words:”
-    6d.Find pages with… “none of these words:”
-7.Appearance: Like Google’s own Advanced Search page, the four options should be stacked vertically, and all of the text fields should be left aligned.
-8.Consistent with Google’s own CSS, the “Advanced Search” button should be blue with white text. When the “Advanced Search” button is clicked, the user should be taken to search results page for their given query.
-9.Lucky: Add an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link should take users directly to the first Google search result for the query, bypassing the normal results page.
-10.Aesthetics: The CSS you write should match Google’s own aesthetics as best as possible.
--->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-  <!-- SET VIEWPORT-->
   <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-  <link rel="stylesheet" href="styles.css" />
-  <!-- TITLE -->
-  <title>Image</title>
-
+  <link href="styles.css" rel="stylesheet">
+  <title>Search</title>
 </head>
 
 <body class="body">
@@ -41,44 +20,44 @@ Your website must meet the following requirements:-
   <div class="bar">
     <label>Advanced Search</label>
   </div>
-  <div class="horizontal-line"></div>
+  <div class="line"></div>
 
   <!-- FORM SEARCH -->
-  <div class="advanced-search-container">
+  <div class="adv-search-div">
     <form action="https://www.google.com/search" method="get">
       <label>Find pages with...</label>
       <div class="whitespace"></div>
       <label>To do this in the search box.</label>
-      <div class="form-group">
+      <div class="form-box">
         <label>All these words:</label>
         <input type="text" name="as_q">
-        <div class="clarification">
+        <div class="to-do">
           Type the important words: <span class="monospace">tri-colour rat terrier</span>
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-box">
         <label>This exact word or phrase:</label>
         <input type="text" name="as_epq">
-        <div class="clarification">
+        <div class="to-do">
           Put exact words in quotes: <span class="monospace">"rat terrier"</span>
         </div>
-      </div>  
-      <div class="form-group">
+      </div>
+      <div class="form-box">
         <label>Any of these words: </label>
         <input type="text" name="as_oq">
-        <div class="clarification">
+        <div class="to-do">
           Type OR between all the words you want: <span class="monospace">miniature OR standard</span>
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-box">
         <label>None of these words:</label>
         <input type="text" name="as_eq">
-        <div class="clarification">
+        <div class="to-do">
           Put a minus sign just before words that you don't want: <span class="monospace">-rodent, -"Jack
             Russell"</span>
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-box">
         <label></label>
         <div class="right-align">
           <input type="submit" class="blue-button" value="Advanced Search">

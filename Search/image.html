@@ -1,18 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-  <!-- SET VIEWPORT-->
   <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-  <link rel="stylesheet" href="styles.css" />
-  <!-- TITLE -->
-  <title>Image</title>
-
+  <link href="styles.css" rel="stylesheet">
+  <title>Search</title>
 </head>
 
-<body>
+<body class="body">
 
   <!-- NAVIGATION BAR -->
   <nav class="nav">
@@ -21,9 +16,9 @@
 
   <!-- GOOGLE IMAGE LOGO -->
   <div class="center">
-    <img
+  <a href="index.html"><img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/2000px-Google_Images_2015_logo.svg.png"
-      style="width: 50%">
+      style="width: 50%"></a>
   </div>
 
   <!-- FORM SEARCH -->
@@ -33,6 +28,7 @@
         <input type="text" name="q" placeholder="Google Image Search" class="searchbox">
       </div>
       <input type="submit" value="Search Image" class="buttons">
+      <input type="hidden" name="tbm" value="isch">
     </form>
   </div>
 </body>
